@@ -23,7 +23,7 @@
 
 - (NSArray<UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect {
     // 获取rect中的布局属性
-    NSArray<UICollectionViewLayoutAttributes *> *attrs = [super layoutAttributesForElementsInRect:rect];
+    NSArray<UICollectionViewLayoutAttributes *> *attrs = [[NSArray alloc] initWithArray:[super layoutAttributesForElementsInRect:rect] copyItems:YES];
     // 找到中心点
     CGFloat centerX = self.collectionView.contentOffset.x + self.collectionView.bounds.size.width / 2.0;
     // 每个点根据距离中心点距离进行缩放
