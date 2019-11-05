@@ -38,6 +38,12 @@
     return cell;
 }
 
+#pragma mark - UICollectionViewDelegate
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"%ld", indexPath.row);
+}
+
 #pragma mark - WaterfallFlowLayoutDelegate
 
 - (CGFloat)waterfallFlowLayout:(WaterfallFlowLayout *)layout itemHeightAtIndexPath:(NSIndexPath *)indexPath {
