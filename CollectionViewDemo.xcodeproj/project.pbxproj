@@ -30,6 +30,10 @@
 		234B1B34236D305E00FBB80D /* BasicFooterCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 234B1B33236D305E00FBB80D /* BasicFooterCollectionReusableView.m */; };
 		234B1B37236D359000FBB80D /* WaterfallFlowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 234B1B36236D359000FBB80D /* WaterfallFlowViewController.m */; };
 		234B1B3B236D36B500FBB80D /* WaterfallFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 234B1B3A236D36B500FBB80D /* WaterfallFlowLayout.m */; };
+		234B1B3E236FCD0600FBB80D /* CircularCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 234B1B3D236FCD0600FBB80D /* CircularCollectionViewLayout.m */; };
+		234B1B42236FCD3600FBB80D /* CircularViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 234B1B41236FCD3600FBB80D /* CircularViewController.m */; };
+		234B1B45236FCF8800FBB80D /* CircularCollectionViewLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 234B1B44236FCF8800FBB80D /* CircularCollectionViewLayoutAttributes.m */; };
+		234B1B48236FD4E200FBB80D /* CircularCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 234B1B47236FD4E200FBB80D /* CircularCollectionViewCell.m */; };
 		235F961A236EA542004B9CFC /* MultiCellHorizontalScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 235F9619236EA541004B9CFC /* MultiCellHorizontalScrollViewController.m */; };
 		235F961E236EA57C004B9CFC /* MultiCellsFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 235F961D236EA57C004B9CFC /* MultiCellsFlowLayout.m */; };
 		2372FA6D236ED9010002CFBD /* CoverFlowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2372FA6C236ED9000002CFBD /* CoverFlowViewController.m */; };
@@ -86,6 +90,14 @@
 		234B1B36236D359000FBB80D /* WaterfallFlowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterfallFlowViewController.m; sourceTree = "<group>"; };
 		234B1B39236D36B500FBB80D /* WaterfallFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterfallFlowLayout.h; sourceTree = "<group>"; };
 		234B1B3A236D36B500FBB80D /* WaterfallFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterfallFlowLayout.m; sourceTree = "<group>"; };
+		234B1B3C236FCD0600FBB80D /* CircularCollectionViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircularCollectionViewLayout.h; sourceTree = "<group>"; };
+		234B1B3D236FCD0600FBB80D /* CircularCollectionViewLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircularCollectionViewLayout.m; sourceTree = "<group>"; };
+		234B1B40236FCD3600FBB80D /* CircularViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircularViewController.h; sourceTree = "<group>"; };
+		234B1B41236FCD3600FBB80D /* CircularViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircularViewController.m; sourceTree = "<group>"; };
+		234B1B43236FCF8800FBB80D /* CircularCollectionViewLayoutAttributes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircularCollectionViewLayoutAttributes.h; sourceTree = "<group>"; };
+		234B1B44236FCF8800FBB80D /* CircularCollectionViewLayoutAttributes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircularCollectionViewLayoutAttributes.m; sourceTree = "<group>"; };
+		234B1B46236FD4E200FBB80D /* CircularCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircularCollectionViewCell.h; sourceTree = "<group>"; };
+		234B1B47236FD4E200FBB80D /* CircularCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircularCollectionViewCell.m; sourceTree = "<group>"; };
 		235F9618236EA541004B9CFC /* MultiCellHorizontalScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiCellHorizontalScrollViewController.h; sourceTree = "<group>"; };
 		235F9619236EA541004B9CFC /* MultiCellHorizontalScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiCellHorizontalScrollViewController.m; sourceTree = "<group>"; };
 		235F961C236EA57C004B9CFC /* MultiCellsFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiCellsFlowLayout.h; sourceTree = "<group>"; };
@@ -133,6 +145,7 @@
 				234B1AED236C4A5C00FBB80D /* SceneDelegate.m */,
 				234B1AEF236C4A5C00FBB80D /* ViewController.h */,
 				234B1AF0236C4A5C00FBB80D /* ViewController.m */,
+				234B1B3F236FCD0D00FBB80D /* Circular */,
 				2372FA6E236ED9090002CFBD /* CoverFlow */,
 				235F961B236EA548004B9CFC /* MultiCells */,
 				234B1B38236D359700FBB80D /* WaterfallFlow */,
@@ -202,6 +215,21 @@
 				234B1B3A236D36B500FBB80D /* WaterfallFlowLayout.m */,
 			);
 			path = WaterfallFlow;
+			sourceTree = "<group>";
+		};
+		234B1B3F236FCD0D00FBB80D /* Circular */ = {
+			isa = PBXGroup;
+			children = (
+				234B1B3C236FCD0600FBB80D /* CircularCollectionViewLayout.h */,
+				234B1B3D236FCD0600FBB80D /* CircularCollectionViewLayout.m */,
+				234B1B43236FCF8800FBB80D /* CircularCollectionViewLayoutAttributes.h */,
+				234B1B44236FCF8800FBB80D /* CircularCollectionViewLayoutAttributes.m */,
+				234B1B40236FCD3600FBB80D /* CircularViewController.h */,
+				234B1B41236FCD3600FBB80D /* CircularViewController.m */,
+				234B1B46236FD4E200FBB80D /* CircularCollectionViewCell.h */,
+				234B1B47236FD4E200FBB80D /* CircularCollectionViewCell.m */,
+			);
+			path = Circular;
 			sourceTree = "<group>";
 		};
 		235F961B236EA548004B9CFC /* MultiCells */ = {
@@ -297,17 +325,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				234B1B25236C4AA700FBB80D /* MASViewConstraint.m in Sources */,
+				234B1B42236FCD3600FBB80D /* CircularViewController.m in Sources */,
 				234B1B26236C4AA700FBB80D /* MASViewAttribute.m in Sources */,
 				234B1AF1236C4A5C00FBB80D /* ViewController.m in Sources */,
 				234B1B2A236C4D0C00FBB80D /* BasicUseViewController.m in Sources */,
 				234B1AEB236C4A5C00FBB80D /* AppDelegate.m in Sources */,
 				234B1B22236C4AA700FBB80D /* NSArray+MASAdditions.m in Sources */,
+				234B1B45236FCF8800FBB80D /* CircularCollectionViewLayoutAttributes.m in Sources */,
 				235F961A236EA542004B9CFC /* MultiCellHorizontalScrollViewController.m in Sources */,
 				234B1B1E236C4AA700FBB80D /* ViewController+MASAdditions.m in Sources */,
 				234B1B1F236C4AA700FBB80D /* MASCompositeConstraint.m in Sources */,
 				234B1B3B236D36B500FBB80D /* WaterfallFlowLayout.m in Sources */,
+				234B1B3E236FCD0600FBB80D /* CircularCollectionViewLayout.m in Sources */,
 				2372FA6D236ED9010002CFBD /* CoverFlowViewController.m in Sources */,
 				234B1B37236D359000FBB80D /* WaterfallFlowViewController.m in Sources */,
+				234B1B48236FD4E200FBB80D /* CircularCollectionViewCell.m in Sources */,
 				234B1AFC236C4A5E00FBB80D /* main.m in Sources */,
 				234B1B23236C4AA700FBB80D /* View+MASAdditions.m in Sources */,
 				234B1B31236D2F2500FBB80D /* BasicHeaderCollectionReusableView.m in Sources */,
