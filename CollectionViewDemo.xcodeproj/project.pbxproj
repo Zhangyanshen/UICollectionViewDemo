@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		234253C723711DDF00E36A4C /* InteractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 234253C623711DDF00E36A4C /* InteractViewController.m */; };
 		234B1AEB236C4A5C00FBB80D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 234B1AEA236C4A5C00FBB80D /* AppDelegate.m */; };
 		234B1AEE236C4A5C00FBB80D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 234B1AED236C4A5C00FBB80D /* SceneDelegate.m */; };
 		234B1AF1236C4A5C00FBB80D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 234B1AF0236C4A5C00FBB80D /* ViewController.m */; };
@@ -41,6 +42,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		234253C523711DDF00E36A4C /* InteractViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InteractViewController.h; sourceTree = "<group>"; };
+		234253C623711DDF00E36A4C /* InteractViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InteractViewController.m; sourceTree = "<group>"; };
 		234B1AE6236C4A5C00FBB80D /* CollectionViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		234B1AE9236C4A5C00FBB80D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		234B1AEA236C4A5C00FBB80D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -119,6 +122,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		234253C823711DE600E36A4C /* Interactive */ = {
+			isa = PBXGroup;
+			children = (
+				234253C523711DDF00E36A4C /* InteractViewController.h */,
+				234253C623711DDF00E36A4C /* InteractViewController.m */,
+			);
+			path = Interactive;
+			sourceTree = "<group>";
+		};
 		234B1ADD236C4A5C00FBB80D = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +157,7 @@
 				234B1AED236C4A5C00FBB80D /* SceneDelegate.m */,
 				234B1AEF236C4A5C00FBB80D /* ViewController.h */,
 				234B1AF0236C4A5C00FBB80D /* ViewController.m */,
+				234253C823711DE600E36A4C /* Interactive */,
 				234B1B3F236FCD0D00FBB80D /* Circular */,
 				2372FA6E236ED9090002CFBD /* CoverFlow */,
 				235F961B236EA548004B9CFC /* MultiCells */,
@@ -336,6 +349,7 @@
 				234B1B1E236C4AA700FBB80D /* ViewController+MASAdditions.m in Sources */,
 				234B1B1F236C4AA700FBB80D /* MASCompositeConstraint.m in Sources */,
 				234B1B3B236D36B500FBB80D /* WaterfallFlowLayout.m in Sources */,
+				234253C723711DDF00E36A4C /* InteractViewController.m in Sources */,
 				234B1B3E236FCD0600FBB80D /* CircularCollectionViewLayout.m in Sources */,
 				2372FA6D236ED9010002CFBD /* CoverFlowViewController.m in Sources */,
 				234B1B37236D359000FBB80D /* WaterfallFlowViewController.m in Sources */,

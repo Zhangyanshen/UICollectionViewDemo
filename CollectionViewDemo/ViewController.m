@@ -31,6 +31,9 @@
         @{@"sectionTitle": @"动态调整", @"classes": @[
                   @{@"title": @"CoverFlow效果", @"class": @"CoverFlowViewController"},
                   @{@"title": @"轮转卡片效果", @"class": @"CircularViewController"}
+        ]},
+        @{@"sectionTitle": @"交互", @"classes": @[
+                  @{@"title": @"iOS 9 cell重排", @"class": @"InteractViewController"},
         ]}
                     ];
     [self.view addSubview:self.tableView];
