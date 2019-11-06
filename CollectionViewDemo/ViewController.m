@@ -34,7 +34,11 @@
         ]},
         @{@"sectionTitle": @"交互", @"classes": @[
                   @{@"title": @"iOS 9 cell重排", @"class": @"InteractViewController"},
-        ]}
+                  @{@"title": @"今日头条", @"class": @"MoveCollectionViewController"}
+        ]},
+        @{@"sectionTitle": @"优化", @"classes": @[
+                  @{@"title": @"iOS 10 预加载", @"class": @"PrefetchViewController"},
+        ]},
                     ];
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {

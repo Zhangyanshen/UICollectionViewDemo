@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MoveCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="151" height="159"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="151" height="159"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mf5-8W-7TL">
+                        <rect key="frame" x="8" y="8" width="135" height="143"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LeD-Jn-vw7">
+                        <rect key="frame" x="135" y="0.0" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="4UY-RG-Gki"/>
+                            <constraint firstAttribute="width" constant="16" id="KRu-Ju-PB9"/>
+                        </constraints>
+                        <state key="normal" image="collection_error"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="LeD-Jn-vw7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="EPi-XT-5Wd"/>
+                <constraint firstItem="Mf5-8W-7TL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="Pt5-3y-q03"/>
+                <constraint firstAttribute="bottom" secondItem="Mf5-8W-7TL" secondAttribute="bottom" constant="8" id="TUh-Pl-HgE"/>
+                <constraint firstAttribute="trailing" secondItem="Mf5-8W-7TL" secondAttribute="trailing" constant="8" id="Xb2-JN-l4h"/>
+                <constraint firstItem="Mf5-8W-7TL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="qKd-La-t9B"/>
+                <constraint firstAttribute="trailing" secondItem="LeD-Jn-vw7" secondAttribute="trailing" id="ySd-fO-36X"/>
+            </constraints>
+            <size key="customSize" width="151" height="159"/>
+            <connections>
+                <outlet property="deleteButton" destination="LeD-Jn-vw7" id="ePf-kx-jRm"/>
+                <outlet property="textLabel" destination="Mf5-8W-7TL" id="Bii-Bw-FIz"/>
+            </connections>
+            <point key="canvasLocation" x="210.86956521739131" y="123.54910714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="collection_error" width="20" height="20"/>
+    </resources>
+</document>
