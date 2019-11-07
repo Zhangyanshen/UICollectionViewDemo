@@ -29,13 +29,14 @@
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </label>
-                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LeD-Jn-vw7">
+                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LeD-Jn-vw7">
                         <rect key="frame" x="135" y="0.0" width="16" height="16"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="16" id="4UY-RG-Gki"/>
                             <constraint firstAttribute="width" constant="16" id="KRu-Ju-PB9"/>
                         </constraints>
                         <state key="normal" image="collection_error"/>
+                        <state key="disabled" image="collection_error"/>
                     </button>
                 </subviews>
             </view>

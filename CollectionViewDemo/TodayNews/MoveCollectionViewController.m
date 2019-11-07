@@ -235,6 +235,8 @@
         {
             // 移动cell
             self.snapshot.center = self.fingerLocation;
+            // 记录一下位移之后的indexPath
+            self.relocatedIndexPath = [self.collectionView indexPathForItemAtPoint:self.fingerLocation];
             // 进行排序
             [self cellRelocatedToNewIndexPath:self.relocatedIndexPath];
         }
@@ -244,16 +246,7 @@
             if (!self.snapshot) {
                 return;
             }
-            UICollectionViewLayoutAttributes *attr = [self.collectionView layoutAttributesForSupplementaryElementOfKind:UICollectionElementKindSectionHeader atIndexPath:[NSIndexPath indexPathForItem:0 inSection:1]];
-            if (self.fingerLocation.y > CGRectGetMaxY(attr.frame)) {
-                [self.collectionView performBatchUpdates:^{
-                    [self betweenSectionsMoveCellFrom:self.originalIndexPath];
-                } completion:^(BOOL finished) {
-                    [self didEndDraging];
-                }];
-            } else {
-                [self didEndDraging];
-            }
+            [self didEndDraging];
         }
             break;
         default:
@@ -264,9 +257,6 @@
 
 // 拖动结束，显示cell，并移除截图
 - (void)didEndDraging {
-    if (!self.originalIndexPath) {
-        return;
-    }
     UICollectionViewCell *cell = [self.collectionView cellForItemAtIndexPath:self.originalIndexPath];
     cell.hidden = NO;
     cell.alpha = 0;
@@ -285,7 +275,7 @@
 
 // 移动cell，并更新数据源
 - (void)cellRelocatedToNewIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.section == 0) {
+    if (indexPath && indexPath.section == 0) {
         NSString *obj = self.dataArray[0][self.originalIndexPath.item];
         [self.dataArray[0] removeObjectAtIndex:self.originalIndexPath.item];
         [self.dataArray[0] insertObject:obj atIndex:indexPath.item];
