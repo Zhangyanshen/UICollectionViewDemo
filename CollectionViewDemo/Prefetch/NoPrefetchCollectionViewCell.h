@@ -1,8 +1,8 @@
 //
-//  PrefetchCell.h
+//  NoPrefetchCollectionViewCell.h
 //  CollectionViewDemo
 //
-//  Created by 张延深 on 2019/11/5.
+//  Created by 张延深 on 2019/11/8.
 //  Copyright © 2019 张延深. All rights reserved.
 //
 
@@ -10,11 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PrefetchCell : UICollectionViewCell
+@interface NoPrefetchCollectionViewCell : UICollectionViewCell
 
 @property (weak, nonatomic) IBOutlet UIImageView *imgView;
-
-- (void)updateAppearance:(UIImage * _Nullable)image animation:(BOOL)animation;
 
 @end
 

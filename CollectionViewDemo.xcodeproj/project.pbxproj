@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23384FEF2375031C002F0F27 /* PrefetchOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 23384FEE2375031C002F0F27 /* PrefetchOperation.m */; };
+		23384FF2237514AB002F0F27 /* NoPrefetchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23384FF1237514AB002F0F27 /* NoPrefetchViewController.m */; };
+		23384FF5237515B7002F0F27 /* DataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 23384FF4237515B7002F0F27 /* DataStore.m */; };
+		23384FF923756390002F0F27 /* NoPrefetchCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23384FF723756390002F0F27 /* NoPrefetchCollectionViewCell.m */; };
+		23384FFA23756390002F0F27 /* NoPrefetchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23384FF823756390002F0F27 /* NoPrefetchCollectionViewCell.xib */; };
 		234253C723711DDF00E36A4C /* InteractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 234253C623711DDF00E36A4C /* InteractViewController.m */; };
 		234253CB2371273F00E36A4C /* PrefetchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 234253CA2371273F00E36A4C /* PrefetchViewController.m */; };
 		234253D02371287100E36A4C /* PrefetchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 234253CE2371287100E36A4C /* PrefetchCell.m */; };
@@ -68,6 +73,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23384FED2375031C002F0F27 /* PrefetchOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefetchOperation.h; sourceTree = "<group>"; };
+		23384FEE2375031C002F0F27 /* PrefetchOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrefetchOperation.m; sourceTree = "<group>"; };
+		23384FF0237514AB002F0F27 /* NoPrefetchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoPrefetchViewController.h; sourceTree = "<group>"; };
+		23384FF1237514AB002F0F27 /* NoPrefetchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoPrefetchViewController.m; sourceTree = "<group>"; };
+		23384FF3237515B7002F0F27 /* DataStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataStore.h; sourceTree = "<group>"; };
+		23384FF4237515B7002F0F27 /* DataStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataStore.m; sourceTree = "<group>"; };
+		23384FF623756390002F0F27 /* NoPrefetchCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoPrefetchCollectionViewCell.h; sourceTree = "<group>"; };
+		23384FF723756390002F0F27 /* NoPrefetchCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoPrefetchCollectionViewCell.m; sourceTree = "<group>"; };
+		23384FF823756390002F0F27 /* NoPrefetchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoPrefetchCollectionViewCell.xib; sourceTree = "<group>"; };
 		234253C523711DDF00E36A4C /* InteractViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InteractViewController.h; sourceTree = "<group>"; };
 		234253C623711DDF00E36A4C /* InteractViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InteractViewController.m; sourceTree = "<group>"; };
 		234253C92371273F00E36A4C /* PrefetchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefetchViewController.h; sourceTree = "<group>"; };
@@ -215,6 +229,15 @@
 				234253CD2371287100E36A4C /* PrefetchCell.h */,
 				234253CE2371287100E36A4C /* PrefetchCell.m */,
 				234253CF2371287100E36A4C /* PrefetchCell.xib */,
+				23384FED2375031C002F0F27 /* PrefetchOperation.h */,
+				23384FEE2375031C002F0F27 /* PrefetchOperation.m */,
+				23384FF3237515B7002F0F27 /* DataStore.h */,
+				23384FF4237515B7002F0F27 /* DataStore.m */,
+				23384FF0237514AB002F0F27 /* NoPrefetchViewController.h */,
+				23384FF1237514AB002F0F27 /* NoPrefetchViewController.m */,
+				23384FF623756390002F0F27 /* NoPrefetchCollectionViewCell.h */,
+				23384FF723756390002F0F27 /* NoPrefetchCollectionViewCell.m */,
+				23384FF823756390002F0F27 /* NoPrefetchCollectionViewCell.xib */,
 			);
 			path = Prefetch;
 			sourceTree = "<group>";
@@ -501,6 +524,7 @@
 				234B1AF9236C4A5E00FBB80D /* LaunchScreen.storyboard in Resources */,
 				234B1AF6236C4A5E00FBB80D /* Assets.xcassets in Resources */,
 				234253D12371287100E36A4C /* PrefetchCell.xib in Resources */,
+				23384FFA23756390002F0F27 /* NoPrefetchCollectionViewCell.xib in Resources */,
 				234254592372583D00E36A4C /* MoveHeaderCollectionReusableView.xib in Resources */,
 				234B1AF4236C4A5C00FBB80D /* Main.storyboard in Resources */,
 				23425454237255AE00E36A4C /* MoveCollectionViewCell.xib in Resources */,
@@ -532,8 +556,11 @@
 				2342544B23714EB800E36A4C /* YYWebImageOperation.m in Sources */,
 				235F961A236EA542004B9CFC /* MultiCellHorizontalScrollViewController.m in Sources */,
 				2342544A23714EB800E36A4C /* CALayer+YYWebImage.m in Sources */,
+				23384FEF2375031C002F0F27 /* PrefetchOperation.m in Sources */,
 				234B1B1E236C4AA700FBB80D /* ViewController+MASAdditions.m in Sources */,
+				23384FF2237514AB002F0F27 /* NoPrefetchViewController.m in Sources */,
 				234B1B1F236C4AA700FBB80D /* MASCompositeConstraint.m in Sources */,
+				23384FF923756390002F0F27 /* NoPrefetchCollectionViewCell.m in Sources */,
 				2342543B23714EB800E36A4C /* YYDiskCache.m in Sources */,
 				234B1B3B236D36B500FBB80D /* WaterfallFlowLayout.m in Sources */,
 				234253C723711DDF00E36A4C /* InteractViewController.m in Sources */,
@@ -557,6 +584,7 @@
 				2372FA71236ED9350002CFBD /* CoverFlowLayout.m in Sources */,
 				234B1B1D236C4AA700FBB80D /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				2342543C23714EB800E36A4C /* YYCache.m in Sources */,
+				23384FF5237515B7002F0F27 /* DataStore.m in Sources */,
 				2342543D23714EB800E36A4C /* YYKVStorage.m in Sources */,
 				2342544523714EB800E36A4C /* _YYWebImageSetter.m in Sources */,
 				2342544823714EB800E36A4C /* MKAnnotationView+YYWebImage.m in Sources */,

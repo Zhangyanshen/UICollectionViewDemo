@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="NoPrefetchCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="205" height="196"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="205" height="196"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SsD-yQ-0Y9">
+                        <rect key="frame" x="0.0" y="0.0" width="205" height="196"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="SsD-yQ-0Y9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="AZi-ln-ma6"/>
+                <constraint firstItem="SsD-yQ-0Y9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Rxc-a5-Isk"/>
+                <constraint firstAttribute="bottom" secondItem="SsD-yQ-0Y9" secondAttribute="bottom" id="f0E-xJ-ZTS"/>
+                <constraint firstAttribute="trailing" secondItem="SsD-yQ-0Y9" secondAttribute="trailing" id="ox2-ru-EJX"/>
+            </constraints>
+            <size key="customSize" width="205" height="196"/>
+            <connections>
+                <outlet property="imgView" destination="SsD-yQ-0Y9" id="bVy-pQ-zwX"/>
+            </connections>
+            <point key="canvasLocation" x="250.00000000000003" y="189.50892857142856"/>
+        </collectionViewCell>
+    </objects>
+</document>

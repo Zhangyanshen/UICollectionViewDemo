@@ -19,10 +19,15 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Vt-tS-l6G">
                         <rect key="frame" x="0.0" y="0.0" width="149" height="134"/>
                     </imageView>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="HYu-Lw-YCE">
+                        <rect key="frame" x="56" y="48.5" width="37" height="37"/>
+                    </activityIndicatorView>
                 </subviews>
             </view>
             <constraints>
                 <constraint firstItem="7Vt-tS-l6G" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="JKJ-4l-vOq"/>
+                <constraint firstItem="HYu-Lw-YCE" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="KCA-oN-mNM"/>
+                <constraint firstItem="HYu-Lw-YCE" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="PqB-Gx-J8n"/>
                 <constraint firstAttribute="trailing" secondItem="7Vt-tS-l6G" secondAttribute="trailing" id="RXD-kR-nJa"/>
                 <constraint firstAttribute="bottom" secondItem="7Vt-tS-l6G" secondAttribute="bottom" id="VE5-D6-fxC"/>
                 <constraint firstItem="7Vt-tS-l6G" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ggq-Ys-SR0"/>
@@ -30,6 +35,7 @@
             <size key="customSize" width="149" height="134"/>
             <connections>
                 <outlet property="imgView" destination="7Vt-tS-l6G" id="toW-s7-CL2"/>
+                <outlet property="loadingIndicatorView" destination="HYu-Lw-YCE" id="fEU-CC-J0a"/>
             </connections>
             <point key="canvasLocation" x="209.42028985507247" y="117.85714285714285"/>
         </collectionViewCell>

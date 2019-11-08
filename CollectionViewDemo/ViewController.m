@@ -37,7 +37,8 @@
                   @{@"title": @"今日头条", @"class": @"MoveCollectionViewController"}
         ]},
         @{@"sectionTitle": @"优化", @"classes": @[
-                  @{@"title": @"iOS 10 预加载", @"class": @"PrefetchViewController"},
+                  @{@"title": @"不使用预加载", @"class": @"NoPrefetchViewController"},
+                  @{@"title": @"iOS 10 预加载", @"class": @"PrefetchViewController"}
         ]},
                     ];
     [self.view addSubview:self.tableView];
