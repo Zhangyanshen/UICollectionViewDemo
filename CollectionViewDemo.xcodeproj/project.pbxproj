@@ -12,6 +12,10 @@
 		23384FF5237515B7002F0F27 /* DataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 23384FF4237515B7002F0F27 /* DataStore.m */; };
 		23384FF923756390002F0F27 /* NoPrefetchCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23384FF723756390002F0F27 /* NoPrefetchCollectionViewCell.m */; };
 		23384FFA23756390002F0F27 /* NoPrefetchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23384FF823756390002F0F27 /* NoPrefetchCollectionViewCell.xib */; };
+		23384FFD23758874002F0F27 /* AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23384FFC23758874002F0F27 /* AlbumViewController.m */; };
+		23385001237588AA002F0F27 /* AlbumLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 23385000237588AA002F0F27 /* AlbumLayout.m */; };
+		23385005237597EC002F0F27 /* AlbumCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23385003237597EC002F0F27 /* AlbumCollectionViewCell.m */; };
+		23385006237597EC002F0F27 /* AlbumCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23385004237597EC002F0F27 /* AlbumCollectionViewCell.xib */; };
 		234253C723711DDF00E36A4C /* InteractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 234253C623711DDF00E36A4C /* InteractViewController.m */; };
 		234253CB2371273F00E36A4C /* PrefetchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 234253CA2371273F00E36A4C /* PrefetchViewController.m */; };
 		234253D02371287100E36A4C /* PrefetchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 234253CE2371287100E36A4C /* PrefetchCell.m */; };
@@ -82,6 +86,13 @@
 		23384FF623756390002F0F27 /* NoPrefetchCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoPrefetchCollectionViewCell.h; sourceTree = "<group>"; };
 		23384FF723756390002F0F27 /* NoPrefetchCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoPrefetchCollectionViewCell.m; sourceTree = "<group>"; };
 		23384FF823756390002F0F27 /* NoPrefetchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoPrefetchCollectionViewCell.xib; sourceTree = "<group>"; };
+		23384FFB23758874002F0F27 /* AlbumViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlbumViewController.h; sourceTree = "<group>"; };
+		23384FFC23758874002F0F27 /* AlbumViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlbumViewController.m; sourceTree = "<group>"; };
+		23384FFF237588AA002F0F27 /* AlbumLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlbumLayout.h; sourceTree = "<group>"; };
+		23385000237588AA002F0F27 /* AlbumLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlbumLayout.m; sourceTree = "<group>"; };
+		23385002237597EC002F0F27 /* AlbumCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlbumCollectionViewCell.h; sourceTree = "<group>"; };
+		23385003237597EC002F0F27 /* AlbumCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlbumCollectionViewCell.m; sourceTree = "<group>"; };
+		23385004237597EC002F0F27 /* AlbumCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumCollectionViewCell.xib; sourceTree = "<group>"; };
 		234253C523711DDF00E36A4C /* InteractViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InteractViewController.h; sourceTree = "<group>"; };
 		234253C623711DDF00E36A4C /* InteractViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InteractViewController.m; sourceTree = "<group>"; };
 		234253C92371273F00E36A4C /* PrefetchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefetchViewController.h; sourceTree = "<group>"; };
@@ -212,6 +223,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23384FFE2375887B002F0F27 /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				23384FFB23758874002F0F27 /* AlbumViewController.h */,
+				23384FFC23758874002F0F27 /* AlbumViewController.m */,
+				23384FFF237588AA002F0F27 /* AlbumLayout.h */,
+				23385000237588AA002F0F27 /* AlbumLayout.m */,
+				23385002237597EC002F0F27 /* AlbumCollectionViewCell.h */,
+				23385003237597EC002F0F27 /* AlbumCollectionViewCell.m */,
+				23385004237597EC002F0F27 /* AlbumCollectionViewCell.xib */,
+			);
+			path = Album;
+			sourceTree = "<group>";
+		};
 		234253C823711DE600E36A4C /* Interactive */ = {
 			isa = PBXGroup;
 			children = (
@@ -352,6 +377,7 @@
 				234B1AED236C4A5C00FBB80D /* SceneDelegate.m */,
 				234B1AEF236C4A5C00FBB80D /* ViewController.h */,
 				234B1AF0236C4A5C00FBB80D /* ViewController.m */,
+				23384FFE2375887B002F0F27 /* Album */,
 				2342544F2372558000E36A4C /* TodayNews */,
 				234253CC2371274400E36A4C /* Prefetch */,
 				234253C823711DE600E36A4C /* Interactive */,
@@ -525,6 +551,7 @@
 				234B1AF6236C4A5E00FBB80D /* Assets.xcassets in Resources */,
 				234253D12371287100E36A4C /* PrefetchCell.xib in Resources */,
 				23384FFA23756390002F0F27 /* NoPrefetchCollectionViewCell.xib in Resources */,
+				23385006237597EC002F0F27 /* AlbumCollectionViewCell.xib in Resources */,
 				234254592372583D00E36A4C /* MoveHeaderCollectionReusableView.xib in Resources */,
 				234B1AF4236C4A5C00FBB80D /* Main.storyboard in Resources */,
 				23425454237255AE00E36A4C /* MoveCollectionViewCell.xib in Resources */,
@@ -552,6 +579,7 @@
 				234253D02371287100E36A4C /* PrefetchCell.m in Sources */,
 				234B1B45236FCF8800FBB80D /* CircularCollectionViewLayoutAttributes.m in Sources */,
 				2342544423714EB800E36A4C /* YYAnimatedImageView.m in Sources */,
+				23384FFD23758874002F0F27 /* AlbumViewController.m in Sources */,
 				2342543F23714EB800E36A4C /* YYWebImageManager.m in Sources */,
 				2342544B23714EB800E36A4C /* YYWebImageOperation.m in Sources */,
 				235F961A236EA542004B9CFC /* MultiCellHorizontalScrollViewController.m in Sources */,
@@ -568,6 +596,7 @@
 				2372FA6D236ED9010002CFBD /* CoverFlowViewController.m in Sources */,
 				234B1B37236D359000FBB80D /* WaterfallFlowViewController.m in Sources */,
 				2342544223714EB800E36A4C /* YYImageCoder.m in Sources */,
+				23385005237597EC002F0F27 /* AlbumCollectionViewCell.m in Sources */,
 				234B1B48236FD4E200FBB80D /* CircularCollectionViewCell.m in Sources */,
 				2342543A23714EB800E36A4C /* YYImageCache.m in Sources */,
 				234B1AFC236C4A5E00FBB80D /* main.m in Sources */,
@@ -592,6 +621,7 @@
 				234254582372583D00E36A4C /* MoveHeaderCollectionReusableView.m in Sources */,
 				234B1B2E236C4F1E00FBB80D /* BasicCollectionViewCell.m in Sources */,
 				234B1B21236C4AA700FBB80D /* MASLayoutConstraint.m in Sources */,
+				23385001237588AA002F0F27 /* AlbumLayout.m in Sources */,
 				234B1AEE236C4A5C00FBB80D /* SceneDelegate.m in Sources */,
 				234B1B34236D305E00FBB80D /* BasicFooterCollectionReusableView.m in Sources */,
 			);

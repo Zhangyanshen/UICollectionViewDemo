@@ -40,6 +40,9 @@
                   @{@"title": @"不使用预加载", @"class": @"NoPrefetchViewController"},
                   @{@"title": @"iOS 10 预加载", @"class": @"PrefetchViewController"}
         ]},
+        @{@"sectionTitle": @"多种布局", @"classes": @[
+                  @{@"title": @"iOS 13之前", @"class": @"AlbumViewController"}
+        ]}
                     ];
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
